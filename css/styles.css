@@ -1,0 +1,172 @@
+body{
+  font-family: 'Montserrat, sans-serif';
+  text-align: center;
+}
+
+.container-fluid{
+  padding: 7% 15%
+}
+
+/* Title*/
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+#title {
+  background-color: #ff4c68;
+  color:white;
+}
+
+.title-heading {
+  font-family: 'Montserrat, sans-serif';
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#title img {
+  transform: rotate(25deg);
+  width: 60%;
+  position: absolute; /* position koymadan z-index calismaz */
+  right: 30%;
+  z-index: 0; /* default olarak zero zaten ama dikkat cekmek icin yazdim  */
+}
+
+ @media (max-width:1020px) { /* NORMALLY BREAK POINT IS 992px but for us the z-index
+    starts breaking at 1020px thats why we choose break point 1020px*/
+  .title-heading{
+    text-align: center;
+  }
+  #title img{
+    transform: rotate(0);
+    position: static;
+
+  }
+}
+
+/* Navigation Bar */
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+.brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item{
+  padding: 0px 18px;
+}
+
+.nav-link{
+    font-size:1.2rem;
+    font-family: "Montserrat-Light";
+}
+
+/* DOWNLOAD BUTTONS */
+.download-btn{
+  margin: 5% 3% 5% 0;
+}
+
+/* FEATURES */
+#features{
+  background-color: white;
+  position: relative; /* position koymadan z-index calismaz */
+  z-index: 1;
+  /* imagein ustune cikarmark icin aslinda z indexleri
+  silsek ayni efekt olur cunku bu section html flowunda
+  zaten altta o yuzden sayfada uste cikar!*/
+}
+
+#features .fas{
+  color:#ef8172;
+  font-size:300%;
+  margin-bottom:2.5%;
+}
+
+#features .fas:hover{
+  color:#ff4c68;
+}
+
+#features h3{
+  font-family:"Montserrat, sans-serif";
+  font-weight: 800;
+  font-size:1.5rem;
+
+}
+
+#features p{
+  color:#8f8f8f;
+  width:75%;
+  margin:auto;
+}
+
+/* TESTIMONIALS SEC */
+
+#testimonials{
+    background-color: #ef8172;
+    color:white;
+}
+
+
+#testimonials h2{
+
+  font-family: "Montserrat, sans-serif";
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+#testimonials img{
+  width: 15%;
+  border-radius: 100%;
+  margin: 20px;
+}
+/* PRESS SEC */
+#press{
+  background-color: #ef8172;
+  color:white;
+}
+
+#press img{
+    width: 15%;
+    margin:20px 20px 50px;
+}
+
+/* PRICING SECTION */
+#pricing{
+  padding:5%;
+
+}
+.price-col{
+  padding:3% 2%;
+}
+/* CTA SEC */
+#cta{
+  background-color: #ff4c68;
+}
+#cta h3{
+  font-family: "Montserrat-Black";
+  font-weight: 900;
+  font-size:3.5rem;
+  color:#fff;
+}
+#cta .btn{
+  margin: 50px 10px 20px;
+}
+
+/* FOOTER */
+#footer{
+  background-color: white;
+  color:grey;
+  padding:7% 15% 5%;
+}
+#footer .icon{
+  color:grey;
+  margin:15px 8px;
+}
+#footer .icon:hover{
+  color:#ff4c68;
+}
