@@ -44,7 +44,11 @@ body{
 
   }
 }
-
+@media (max-width:991px) and (min-width:481px) {
+  #title img{
+    width:50%;
+  }
+}
 /* Navigation Bar */
 .navbar{
   padding: 0 0 4.5rem;
@@ -94,7 +98,6 @@ body{
   font-family:"Montserrat, sans-serif";
   font-weight: 800;
   font-size:1.5rem;
-
 }
 
 #features p{
@@ -102,6 +105,7 @@ body{
   width:75%;
   margin:auto;
 }
+
 
 /* TESTIMONIALS SEC */
 
@@ -124,6 +128,17 @@ body{
   border-radius: 100%;
   margin: 20px;
 }
+@media (max-width:992px) and (min-width:577px) {
+  #testimonials h2{
+    font-size: 2.75rem;
+  }
+}
+@media (max-width:576px) {
+  #testimonials h2{
+    font-size:2rem;
+  }
+}
+
 /* PRESS SEC */
 #press{
   background-color: #ef8172;
@@ -133,6 +148,16 @@ body{
 #press img{
     width: 15%;
     margin:20px 20px 50px;
+}
+@media (max-width:768px) and (min-width:576px) {
+  #press img{
+    width:20%;
+  }
+}
+@media (max-width:576px) {
+  #press img{
+    width: 25%;
+  }
 }
 
 /* PRICING SECTION */
@@ -155,6 +180,11 @@ body{
 }
 #cta .btn{
   margin: 50px 10px 20px;
+}
+@media (max-width:576px) {
+  #cta h3{
+    font-size: 2.75rem;
+  }
 }
 
 /* FOOTER */
